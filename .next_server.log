@@ -1,0 +1,95 @@
+
+> my-app@0.1.0 dev
+> next dev
+
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /Users/nihaspl/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /Users/nihaspl/Documents/SEO-writer/package-lock.json
+
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.88:3000
+- Environments: .env
+
+✓ Starting...
+✓ Ready in 890ms
+ GET /settings/integrations 200 in 1630ms (compile: 1494ms, render: 136ms)
+ GET /api/auth/me 200 in 366ms (compile: 215ms, render: 151ms)
+[ANALYTICS API] Google Account connected but no GA_PROPERTY_ID selected or found.
+ GET /api/analytics 200 in 1245ms (compile: 1224ms, render: 20ms)
+[ANALYTICS API] Google Account connected but no GA_PROPERTY_ID selected or found.
+ GET /api/analytics 200 in 25ms (compile: 2ms, render: 23ms)
+○ Compiling /api/integrations/google/properties ...
+ GET /settings/integrations 200 in 47ms (compile: 12ms, render: 34ms)
+ GET /api/auth/me 200 in 33ms (compile: 5ms, render: 27ms)
+[ANALYTICS API] Google Account connected but no GA_PROPERTY_ID selected or found.
+ GET /api/analytics 200 in 13ms (compile: 2ms, render: 10ms)
+[ANALYTICS API] Google Account connected but no GA_PROPERTY_ID selected or found.
+ GET /api/analytics 200 in 11ms (compile: 2ms, render: 9ms)
+ GET /settings/integrations 200 in 21ms (compile: 2ms, render: 19ms)
+ GET /api/auth/me 200 in 12ms (compile: 3ms, render: 9ms)
+[ANALYTICS API] Google Account connected but no GA_PROPERTY_ID selected or found.
+ GET /api/analytics 200 in 9ms (compile: 1510µs, render: 7ms)
+[ANALYTICS API] Google Account connected but no GA_PROPERTY_ID selected or found.
+ GET /api/analytics 200 in 11ms (compile: 1762µs, render: 9ms)
+ GET /settings/integrations 200 in 19ms (compile: 1220µs, render: 18ms)
+ GET /api/auth/me 200 in 16ms (compile: 3ms, render: 12ms)
+[ANALYTICS API] Google Account connected but no GA_PROPERTY_ID selected or found.
+ GET /api/analytics 200 in 9ms (compile: 1775µs, render: 7ms)
+[ANALYTICS API] Google Account connected but no GA_PROPERTY_ID selected or found.
+ GET /api/analytics 200 in 9ms (compile: 1457µs, render: 7ms)
+ GET /settings/integrations 200 in 24ms (compile: 1925µs, render: 22ms)
+ GET /api/auth/me 200 in 11ms (compile: 1242µs, render: 9ms)
+[ANALYTICS API] Google Account connected but no GA_PROPERTY_ID selected or found.
+ GET /api/analytics 200 in 10ms (compile: 1330µs, render: 9ms)
+[ANALYTICS API] Google Account connected but no GA_PROPERTY_ID selected or found.
+ GET /api/analytics 200 in 15ms (compile: 1342µs, render: 14ms)
+ GET /settings/integrations 200 in 21ms (compile: 1267µs, render: 20ms)
+ GET /api/auth/me 200 in 6ms (compile: 948µs, render: 5ms)
+[ANALYTICS API] Google Account connected but no GA_PROPERTY_ID selected or found.
+ GET /api/analytics 200 in 8ms (compile: 1695µs, render: 6ms)
+[ANALYTICS API] Google Account connected but no GA_PROPERTY_ID selected or found.
+ GET /api/analytics 200 in 12ms (compile: 3ms, render: 9ms)
+ GET /settings/integrations 200 in 24ms (compile: 1356µs, render: 22ms)
+ GET /api/auth/me 200 in 10ms (compile: 4ms, render: 6ms)
+[ANALYTICS API] Google Account connected but no GA_PROPERTY_ID selected or found.
+ GET /api/analytics 200 in 7ms (compile: 1612µs, render: 5ms)
+[ANALYTICS API] Google Account connected but no GA_PROPERTY_ID selected or found.
+ GET /api/analytics 200 in 16ms (compile: 3ms, render: 12ms)
+ GET /settings/integrations 200 in 56ms (compile: 26ms, render: 30ms)
+ GET /api/auth/me 200 in 10ms (compile: 1583µs, render: 8ms)
+ GET /api/analytics 200 in 13ms (compile: 3ms, render: 10ms)
+[ANALYTICS API] Google Account connected but no GA_PROPERTY_ID selected or found.
+ GET /settings/integrations 200 in 47ms (compile: 2ms, render: 44ms)
+ GET /api/auth/me 200 in 8ms (compile: 1032µs, render: 7ms)
+[ANALYTICS API] Google Account connected but no GA_PROPERTY_ID selected or found.
+ GET /api/analytics 200 in 6ms (compile: 1039µs, render: 5ms)
+[ANALYTICS API] Google Account connected but no GA_PROPERTY_ID selected or found.
+ GET /api/analytics 200 in 7ms (compile: 1512µs, render: 5ms)
+ GET /settings/integrations 200 in 23ms (compile: 1429µs, render: 22ms)
+ GET /api/auth/me 200 in 6ms (compile: 871µs, render: 5ms)
+[ANALYTICS API] Google Account connected but no GA_PROPERTY_ID selected or found.
+ GET /api/analytics 200 in 7ms (compile: 1671µs, render: 6ms)
+[ANALYTICS API] Google Account connected but no GA_PROPERTY_ID selected or found.
+ GET /api/analytics 200 in 11ms (compile: 1134µs, render: 10ms)
+
+thread 'tokio-runtime-worker' (511470) panicked at /Users/geist/dev/actions-runner/_work/next.js/next.js/turbopack/crates/turbo-tasks-backend/src/backend/operation/aggregation_update.rs:1818:17:
+inner_of_upper_lost_followers is not able to remove followers TaskId 145 (<DiskFileSystem as FileSystem>::read) from TaskId 519211 (EcmascriptBrowserChunkContent::own_version) as they don't exist as upper or follower edges
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+ GET /dashboard 200 in 1794ms (compile: 1403ms, render: 391ms)
+ GET /api/auth/me 200 in 254ms (compile: 25ms, render: 229ms)
+[ANALYTICS API] Google Account connected but no GA_PROPERTY_ID selected or found.
+ GET /api/analytics 200 in 719ms (compile: 82ms, render: 638ms)
+[ANALYTICS API] Auto-refreshed access token for Workspace cmlz2yimn0001s9rhlpa4s3o1
+[ANALYTICS API] Google Account connected but no GA_PROPERTY_ID selected or found.
+ GET /api/analytics 200 in 10.1s (compile: 4ms, render: 10.1s)
+ GET /settings/integrations 200 in 206ms (compile: 62ms, render: 144ms)
+ GET /api/auth/me 200 in 72ms (compile: 5ms, render: 67ms)
+[ANALYTICS API] Google Account connected but no GA_PROPERTY_ID selected or found.
+ GET /api/analytics 200 in 925ms (compile: 2ms, render: 923ms)
+[ANALYTICS API] Auto-refreshed access token for Workspace cmlz2yimn0001s9rhlpa4s3o1
+[ANALYTICS API] Google Account connected but no GA_PROPERTY_ID selected or found.
+ GET /api/analytics 200 in 10.0s (compile: 5ms, render: 10.0s)

@@ -1,0 +1,108 @@
+
+> my-app@0.1.0 build
+> next build
+
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /Users/nihaspl/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /Users/nihaspl/Documents/SEO-writer/package-lock.json
+
+▲ Next.js 16.1.6 (Turbopack)
+- Environments: .env
+
+  Creating an optimized production build ...
+node(12307) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.
+✓ Compiled successfully in 37.3s
+  Running TypeScript ...
+
+<--- Last few GCs --->
+
+[12381:0x158008000]    48540 ms: Mark-Compact (reduce) 2045.7 (2084.7) -> 2044.6 (2085.0) MB, 1239.50 / 0.00 ms  (average mu = 0.057, current mu = 0.016) allocation failure; scavenge might not succeed
+[12381:0x158008000]    50985 ms: Mark-Compact (reduce) 2045.8 (2085.0) -> 2044.9 (2085.2) MB, 2413.88 / 0.00 ms  (average mu = 0.033, current mu = 0.013) allocation failure; scavenge might not succeed
+
+
+<--- JS stacktrace --->
+
+FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
+----- Native stack trace -----
+
+ 1: 0x1046dd334 node::OOMErrorHandler(char const*, v8::OOMDetails const&) [/Users/nihaspl/.nvm/versions/node/v20.19.0/bin/node]
+ 2: 0x104899e84 v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, v8::OOMDetails const&) [/Users/nihaspl/.nvm/versions/node/v20.19.0/bin/node]
+ 3: 0x104aa7cd8 v8::internal::Heap::GarbageCollectionReasonToString(v8::internal::GarbageCollectionReason) [/Users/nihaspl/.nvm/versions/node/v20.19.0/bin/node]
+ 4: 0x104aab7d4 v8::internal::Heap::CollectGarbageShared(v8::internal::LocalHeap*, v8::internal::GarbageCollectionReason) [/Users/nihaspl/.nvm/versions/node/v20.19.0/bin/node]
+ 5: 0x104aa8650 v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::internal::GarbageCollectionReason, char const*) [/Users/nihaspl/.nvm/versions/node/v20.19.0/bin/node]
+ 6: 0x104aa61cc v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/Users/nihaspl/.nvm/versions/node/v20.19.0/bin/node]
+ 7: 0x104a9c4dc v8::internal::HeapAllocator::AllocateRawWithLightRetrySlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [/Users/nihaspl/.nvm/versions/node/v20.19.0/bin/node]
+ 8: 0x104a9cd34 v8::internal::HeapAllocator::AllocateRawWithRetryOrFailSlowPath(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [/Users/nihaspl/.nvm/versions/node/v20.19.0/bin/node]
+ 9: 0x104a81214 v8::internal::Factory::NewFillerObject(int, v8::internal::AllocationAlignment, v8::internal::AllocationType, v8::internal::AllocationOrigin) [/Users/nihaspl/.nvm/versions/node/v20.19.0/bin/node]
+10: 0x104e8e34c v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned long*, v8::internal::Isolate*) [/Users/nihaspl/.nvm/versions/node/v20.19.0/bin/node]
+11: 0x105220c44 Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit [/Users/nihaspl/.nvm/versions/node/v20.19.0/bin/node]
+12: 0x1051cb548 Builtins_ArrayIteratorPrototypeNext [/Users/nihaspl/.nvm/versions/node/v20.19.0/bin/node]
+13: 0x109d14e94 
+14: 0x10a220ee4 
+15: 0x10a1ae700 
+16: 0x109c8c354 
+17: 0x10a265404 
+18: 0x109de5640 
+19: 0x109e22e28 
+20: 0x10a349a74 
+21: 0x10a36943c 
+22: 0x10a2e8ce0 
+23: 0x109e3922c 
+24: 0x109e2dcec 
+25: 0x10a3487bc 
+26: 0x109e2cd40 
+27: 0x10a25b0ac 
+28: 0x109e4b5e0 
+29: 0x109e0f5a8 
+30: 0x109e0f7a4 
+31: 0x10a29bbe8 
+32: 0x109e50894 
+33: 0x10a209880 
+34: 0x10a030c04 
+35: 0x10a29c458 
+36: 0x10a29e240 
+37: 0x10a2ad8ec 
+38: 0x1052093a0 Builtins_SetPrototypeForEach [/Users/nihaspl/.nvm/versions/node/v20.19.0/bin/node]
+39: 0x10a32f8e4 
+40: 0x10a2e5dbc 
+41: 0x10a2fbc34 
+42: 0x10a22eb98 
+43: 0x10a352b48 
+44: 0x10a23831c 
+45: 0x109cab2e4 
+46: 0x109ca8e1c 
+47: 0x109ca6024 
+48: 0x109ca8074 
+49: 0x109ca60f0 
+50: 0x109ca65cc 
+51: 0x109ca633c 
+52: 0x109ca6fdc 
+53: 0x109caa464 
+54: 0x1051983e4 Builtins_InterpreterEntryTrampoline [/Users/nihaspl/.nvm/versions/node/v20.19.0/bin/node]
+55: 0x1051983e4 Builtins_InterpreterEntryTrampoline [/Users/nihaspl/.nvm/versions/node/v20.19.0/bin/node]
+56: 0x1051cf210 Builtins_AsyncFunctionAwaitResolveClosure [/Users/nihaspl/.nvm/versions/node/v20.19.0/bin/node]
+57: 0x10527cfb8 Builtins_PromiseFulfillReactionJob [/Users/nihaspl/.nvm/versions/node/v20.19.0/bin/node]
+58: 0x1051beb94 Builtins_RunMicrotasks [/Users/nihaspl/.nvm/versions/node/v20.19.0/bin/node]
+59: 0x1051963f4 Builtins_JSRunMicrotasksEntry [/Users/nihaspl/.nvm/versions/node/v20.19.0/bin/node]
+60: 0x104a12748 v8::internal::(anonymous namespace)::Invoke(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) [/Users/nihaspl/.nvm/versions/node/v20.19.0/bin/node]
+61: 0x104a13074 v8::internal::(anonymous namespace)::InvokeWithTryCatch(v8::internal::Isolate*, v8::internal::(anonymous namespace)::InvokeParams const&) [/Users/nihaspl/.nvm/versions/node/v20.19.0/bin/node]
+62: 0x104a13260 v8::internal::Execution::TryRunMicrotasks(v8::internal::Isolate*, v8::internal::MicrotaskQueue*) [/Users/nihaspl/.nvm/versions/node/v20.19.0/bin/node]
+63: 0x104a3df50 v8::internal::MicrotaskQueue::RunMicrotasks(v8::internal::Isolate*) [/Users/nihaspl/.nvm/versions/node/v20.19.0/bin/node]
+64: 0x104a3e6dc v8::internal::MicrotaskQueue::PerformCheckpoint(v8::Isolate*) [/Users/nihaspl/.nvm/versions/node/v20.19.0/bin/node]
+65: 0x1045f4c84 node::InternalCallbackScope::Close() [/Users/nihaspl/.nvm/versions/node/v20.19.0/bin/node]
+66: 0x1045f486c node::InternalCallbackScope::~InternalCallbackScope() [/Users/nihaspl/.nvm/versions/node/v20.19.0/bin/node]
+67: 0x1046e129c node::fs::FileHandle::CloseReq::Resolve() [/Users/nihaspl/.nvm/versions/node/v20.19.0/bin/node]
+68: 0x1046fafa8 node::fs::FileHandle::ClosePromise()::$_0::__invoke(uv_fs_s*) [/Users/nihaspl/.nvm/versions/node/v20.19.0/bin/node]
+69: 0x1046d61c8 node::MakeLibuvRequestCallback<uv_fs_s, void (*)(uv_fs_s*)>::Wrapper(uv_fs_s*) [/Users/nihaspl/.nvm/versions/node/v20.19.0/bin/node]
+70: 0x105173e34 uv__work_done [/Users/nihaspl/.nvm/versions/node/v20.19.0/bin/node]
+71: 0x10517785c uv__async_io [/Users/nihaspl/.nvm/versions/node/v20.19.0/bin/node]
+72: 0x10518a504 uv__io_poll [/Users/nihaspl/.nvm/versions/node/v20.19.0/bin/node]
+73: 0x105177dc4 uv_run [/Users/nihaspl/.nvm/versions/node/v20.19.0/bin/node]
+74: 0x1045f57e8 node::SpinEventLoopInternal(node::Environment*) [/Users/nihaspl/.nvm/versions/node/v20.19.0/bin/node]
+75: 0x10472048c node::NodeMainInstance::Run() [/Users/nihaspl/.nvm/versions/node/v20.19.0/bin/node]
+76: 0x10469fa78 node::Start(int, char**) [/Users/nihaspl/.nvm/versions/node/v20.19.0/bin/node]
+77: 0x190ad0274 start [/usr/lib/dyld]
+Next.js build worker exited with code: null and signal: SIGABRT

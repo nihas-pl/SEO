@@ -1,0 +1,121 @@
+
+> my-app@0.1.0 dev
+> next dev
+
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /Users/nihaspl/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /Users/nihaspl/Documents/SEO-writer/package-lock.json
+
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.95:3000
+- Environments: .env
+
+✓ Starting...
+✓ Ready in 1390ms
+ GET /backlinks 200 in 2.1s (compile: 1996ms, render: 150ms)
+ GET /api/auth/me 200 in 500ms (compile: 209ms, render: 290ms)
+ GET /api/backlinks 200 in 30.2s (compile: 27ms, render: 30.2s)
+ POST /api/backlinks 200 in 505ms (compile: 50ms, render: 455ms)
+ POST /api/backlinks 200 in 147ms (compile: 9ms, render: 138ms)
+ GET /api/backlinks 200 in 62s (compile: 36ms, render: 62s)
+ GET /api/backlinks 200 in 53s (compile: 22ms, render: 53s)
+ GET /api/backlinks 200 in 60s (compile: 1069µs, render: 60s)
+ POST /api/backlinks/approve 200 in 964ms (compile: 869ms, render: 95ms)
+ POST /api/backlinks/approve 200 in 26ms (compile: 5ms, render: 21ms)
+ POST /api/backlinks/approve 200 in 29ms (compile: 8ms, render: 21ms)
+ POST /api/backlinks/approve 200 in 30ms (compile: 5ms, render: 25ms)
+ POST /api/backlinks/approve 200 in 9ms (compile: 1343µs, render: 8ms)
+ POST /api/backlinks/approve 200 in 16ms (compile: 1560µs, render: 15ms)
+ GET /api/backlinks 200 in 34.7s (compile: 3ms, render: 34.7s)
+[Backlinks API] Failed to fetch: Error: Connection terminated unexpectedly
+    at async GET (src/app/api/backlinks/route.ts:12:31)
+  10 |
+  11 |         // Fetch pending opportunities
+> 12 |         const opportunities = await prisma.backlinkOpportunity.findMany({
+     |                               ^
+  13 |             where: {
+  14 |                 targetArticle: {
+  15 |                     workspaceId: workspace.id {
+  clientVersion: '7.4.1'
+}
+ GET /api/backlinks 500 in 60s (compile: 3ms, render: 60s)
+ GET /api/backlinks 200 in 63s (compile: 8ms, render: 63s)
+ GET /api/backlinks 200 in 72s (compile: 3ms, render: 72s)
+ GET /api/backlinks 200 in 81s (compile: 8ms, render: 81s)
+ GET /api/backlinks 200 in 91s (compile: 6ms, render: 91s)
+✓ Compiled in 1043ms
+✓ Compiled in 730ms
+✓ Compiled in 666ms
+ GET /login 200 in 1517ms (compile: 1164ms, render: 352ms)
+ POST /api/auth/login 401 in 902ms (compile: 455ms, render: 447ms)
+ POST /api/auth/login 401 in 160ms (compile: 93ms, render: 67ms)
+ POST /api/auth/login 401 in 82ms (compile: 54ms, render: 27ms)
+ GET /register 200 in 2.4s (compile: 2.3s, render: 98ms)
+ POST /api/auth/register 400 in 1776ms (compile: 1750ms, render: 27ms)
+✓ Finished filesystem cache database compaction in 11.3s
+ POST /api/auth/register 400 in 102ms (compile: 77ms, render: 24ms)
+[EMAIL] Verification link for test2@gmail.com: http://localhost:3000/api/auth/verify-email?token=90c4149d18a4f414740467b293b769ea415948df6185cfc50b78bf03a6b47b16
+ POST /api/auth/register 200 in 2.2s (compile: 462ms, render: 1768ms)
+[EMAIL] Resend API Error: {
+  statusCode: 403,
+  message: 'The gmail.com domain is not verified. Please, add and verify your domain on https://resend.com/domains',
+  name: 'validation_error'
+}
+ GET /verify-email 200 in 2.8s (compile: 2.8s, render: 65ms)
+ GET /backlinks 200 in 1549ms (compile: 714ms, render: 835ms)
+ GET /api/auth/me 200 in 309ms (compile: 15ms, render: 294ms)
+ GET /api/backlinks 200 in 50s (compile: 4.7s, render: 45s)
+ GET /api/backlinks 200 in 50s (compile: 9ms, render: 50s)
+ POST /api/backlinks 200 in 392ms (compile: 120ms, render: 273ms)
+ GET /api/backlinks 200 in 30.3s (compile: 7ms, render: 30.2s)
+ POST /api/backlinks 200 in 168ms (compile: 64ms, render: 104ms)
+ GET /api/backlinks 200 in 30.1s (compile: 6ms, render: 30.1s)
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /backlinks 200 in 392ms (compile: 108ms, render: 284ms)
+ GET /api/auth/me 200 in 431ms (compile: 330ms, render: 101ms)
+ GET /api/auth/me 200 in 30ms (compile: 9ms, render: 22ms)
+ GET /dashboard 200 in 1027ms (compile: 989ms, render: 38ms)
+ GET /settings/integrations 200 in 437ms (compile: 373ms, render: 63ms)
+ GET /api/backlinks 200 in 51s (compile: 3ms, render: 51s)
+[ANALYTICS API] Auto-refreshed access token for Workspace cmlz2yimn0001s9rhlpa4s3o1
+ GET /content/plan 200 in 250ms (compile: 231ms, render: 19ms)
+ GET /api/analytics 200 in 2.1s (compile: 19ms, render: 2.0s)
+ GET /content/articles 200 in 228ms (compile: 205ms, render: 23ms)
+ GET /content/articles 200 in 70ms (compile: 17ms, render: 53ms)
+ GET /backlinks 200 in 32ms (compile: 10ms, render: 22ms)
+ GET /api/analytics 200 in 1063ms (compile: 3ms, render: 1060ms)
+ GET /ai-search 200 in 195ms (compile: 182ms, render: 13ms)
+ GET /audit 200 in 133ms (compile: 101ms, render: 32ms)
+ GET /reddit 200 in 102ms (compile: 90ms, render: 12ms)
+ GET /reddit 200 in 41ms (compile: 8ms, render: 33ms)
+ GET /audit 200 in 28ms (compile: 4ms, render: 24ms)
+ GET /reddit 200 in 40ms (compile: 4ms, render: 35ms)
+ GET /reddit 200 in 14ms (compile: 1791µs, render: 12ms)
+ GET /reddit 200 in 23ms (compile: 6ms, render: 18ms)
+ GET /reddit 200 in 28ms (compile: 4ms, render: 24ms)
+ GET /reddit 200 in 24ms (compile: 3ms, render: 21ms)
+ GET /reddit 200 in 29ms (compile: 4ms, render: 25ms)
+ GET /api/analytics 200 in 39.9s (compile: 2.4s, render: 37.5s)
+ GET /backlinks 200 in 59ms (compile: 6ms, render: 54ms)
+ GET /api/content/state 200 in 22.7s (compile: 126ms, render: 22.6s)
+ GET /api/backlinks 200 in 62s (compile: 8ms, render: 62s)
+ GET /api/analytics 200 in 15.6s (compile: 5ms, render: 15.6s)
+ GET /api/backlinks 200 in 15.0s (compile: 3ms, render: 15.0s)
+ GET /api/content/state 200 in 2.7s (compile: 10ms, render: 2.7s)
+ GET /api/auth/me 200 in 33.2s (compile: 4ms, render: 33.2s)
+[Backlinks API] Failed to fetch: Error: Connection terminated unexpectedly
+    at async GET (src/app/api/backlinks/route.ts:12:38)
+  10 |
+  11 |         // Inbound: Other workspaces want a link ON your articles. YOU must approve these.
+> 12 |         const inboundOpportunities = await prisma.backlinkOpportunity.findMany({
+     |                                      ^
+  13 |             where: {
+  14 |                 sourceArticle: { workspaceId: workspace.id },
+  15 |                 status: 'PENDING' {
+  clientVersion: '7.4.1'
+}

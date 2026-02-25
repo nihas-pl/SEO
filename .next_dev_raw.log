@@ -1,0 +1,586 @@
+
+> my-app@0.1.0 dev
+> next dev
+
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /Users/nihaspl/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /Users/nihaspl/Documents/SEO-writer/package-lock.json
+
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.95:3000
+- Environments: .env
+
+✓ Starting...
+✓ Ready in 1290ms
+○ Compiling /login ...
+ GET /login 200 in 3.4s (compile: 3.2s, render: 134ms)
+[AUTH] Login error: Error [PrismaClientKnownRequestError]: 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst()` invocation in
+/Users/nihaspl/Documents/SEO-writer/.next/dev/server/chunks/[root-of-the-server]__54f347d8._.js:227:193
+
+  224     });
+  225 }
+  226 // Find user by email or username
+→ 227 const user = await __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst(
+
+    at <unknown> (src/app/api/auth/login/route.ts:16:40)
+    at async POST (src/app/api/auth/login/route.ts:16:22)
+  14 |
+  15 |         // Find user by email or username
+> 16 |         const user = await prisma.user.findFirst({
+     |                                        ^
+  17 |             where: {
+  18 |                 OR: [
+  19 |                     { email: email.toLowerCase().trim() }, {
+  code: 'ECONNREFUSED',
+  meta: [Object],
+  clientVersion: '7.4.1'
+}
+ POST /api/auth/login 500 in 1025ms (compile: 724ms, render: 301ms)
+ GET /register 200 in 847ms (compile: 750ms, render: 97ms)
+[AUTH] Register error: Error [PrismaClientKnownRequestError]: 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst()` invocation in
+/Users/nihaspl/Documents/SEO-writer/.next/dev/server/chunks/[root-of-the-server]__8a71d3c4._.js:326:201
+
+  323     });
+  324 }
+  325 // Check for existing user
+→ 326 const existingUser = await __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst(
+
+    at <unknown> (src/app/api/auth/register/route.ts:42:48)
+    at async POST (src/app/api/auth/register/route.ts:42:30)
+  40 |
+  41 |         // Check for existing user
+> 42 |         const existingUser = await prisma.user.findFirst({
+     |                                                ^
+  43 |             where: {
+  44 |                 OR: [
+  45 |                     { email: email.toLowerCase() }, {
+  code: 'ECONNREFUSED',
+  meta: [Object],
+  clientVersion: '7.4.1'
+}
+ POST /api/auth/register 500 in 818ms (compile: 675ms, render: 143ms)
+ GET /login 200 in 211ms (compile: 118ms, render: 93ms)
+[AUTH] Login error: Error [PrismaClientKnownRequestError]: 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst()` invocation in
+/Users/nihaspl/Documents/SEO-writer/.next/dev/server/chunks/[root-of-the-server]__54f347d8._.js:227:193
+
+  224     });
+  225 }
+  226 // Find user by email or username
+→ 227 const user = await __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst(
+
+    at <unknown> (src/app/api/auth/login/route.ts:16:40)
+    at async POST (src/app/api/auth/login/route.ts:16:22)
+  14 |
+  15 |         // Find user by email or username
+> 16 |         const user = await prisma.user.findFirst({
+     |                                        ^
+  17 |             where: {
+  18 |                 OR: [
+  19 |                     { email: email.toLowerCase().trim() }, {
+  code: 'ECONNREFUSED',
+  meta: [Object],
+  clientVersion: '7.4.1'
+}
+ POST /api/auth/login 500 in 301ms (compile: 66ms, render: 236ms)
+ GET /login 200 in 137ms (compile: 70ms, render: 67ms)
+[AUTH] Login error: Error [PrismaClientKnownRequestError]: 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst()` invocation in
+/Users/nihaspl/Documents/SEO-writer/.next/dev/server/chunks/[root-of-the-server]__54f347d8._.js:227:193
+
+  224     });
+  225 }
+  226 // Find user by email or username
+→ 227 const user = await __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst(
+
+    at <unknown> (src/app/api/auth/login/route.ts:16:40)
+    at async POST (src/app/api/auth/login/route.ts:16:22)
+  14 |
+  15 |         // Find user by email or username
+> 16 |         const user = await prisma.user.findFirst({
+     |                                        ^
+  17 |             where: {
+  18 |                 OR: [
+  19 |                     { email: email.toLowerCase().trim() }, {
+  code: 'ECONNREFUSED',
+  meta: [Object],
+  clientVersion: '7.4.1'
+}
+ POST /api/auth/login 500 in 237ms (compile: 53ms, render: 185ms)
+ GET /dashboard 200 in 3.3s (compile: 3.0s, render: 261ms)
+[AUTH] /me error: Error [PrismaClientKnownRequestError]: 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findUnique()` invocation in
+/Users/nihaspl/Documents/SEO-writer/.next/dev/server/chunks/[root-of-the-server]__4d755471._.js:217:193
+
+  214         status: 401
+  215     });
+  216 }
+→ 217 const user = await __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findUnique(
+
+    at <unknown> (src/app/api/auth/me/route.ts:12:40)
+    at async GET (src/app/api/auth/me/route.ts:12:22)
+  10 |         }
+  11 |
+> 12 |         const user = await prisma.user.findUnique({
+     |                                        ^
+  13 |             where: { id: session.userId },
+  14 |             select: {
+  15 |                 id: true, {
+  code: 'ECONNREFUSED',
+  meta: [Object],
+  clientVersion: '7.4.1'
+}
+ GET /api/auth/me 500 in 782ms (compile: 515ms, render: 267ms)
+ GET /login 200 in 47ms (compile: 12ms, render: 35ms)
+[Run AI Evaluations API] Failed: Error [PrismaClientKnownRequestError]: 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findUnique()` invocation in
+/Users/nihaspl/Documents/SEO-writer/.next/dev/server/chunks/[root-of-the-server]__25162735._.js:220:189
+
+  217 if (!session) {
+  218     throw new AuthError("Not authenticated", 401);
+  219 }
+→ 220 const user = await __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findUnique(
+
+    at <unknown> (src/server/services/user-workspace.ts:14:34)
+    at async getAuthenticatedUser (src/server/services/user-workspace.ts:14:16)
+    at async POST (src/app/api/ai-search/run-evaluations/route.ts:10:31)
+  12 |   }
+  13 |
+> 14 |   const user = await prisma.user.findUnique({
+     |                                  ^
+  15 |     where: { id: session.userId },
+  16 |   });
+  17 | {
+  code: 'ECONNREFUSED',
+  meta: [Object],
+  clientVersion: '7.4.1'
+}
+ POST /api/ai-search/run-evaluations 500 in 949ms (compile: 755ms, render: 194ms)
+[Reddit API] Scan failed: Error [PrismaClientKnownRequestError]: 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findUnique()` invocation in
+/Users/nihaspl/Documents/SEO-writer/.next/dev/server/chunks/[root-of-the-server]__25162735._.js:220:189
+
+  217 if (!session) {
+  218     throw new AuthError("Not authenticated", 401);
+  219 }
+→ 220 const user = await __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findUnique(
+
+    at <unknown> (src/server/services/user-workspace.ts:14:34)
+    at async getAuthenticatedUser (src/server/services/user-workspace.ts:14:16)
+    at async POST (src/app/api/reddit/scan/route.ts:10:31)
+  12 |   }
+  13 |
+> 14 |   const user = await prisma.user.findUnique({
+     |                                  ^
+  15 |     where: { id: session.userId },
+  16 |   });
+  17 | {
+  code: 'ECONNREFUSED',
+  meta: [Object],
+  clientVersion: '7.4.1'
+}
+ POST /api/reddit/scan 500 in 186ms (compile: 103ms, render: 83ms)
+ GET /ai-search 200 in 1628ms (compile: 1532ms, render: 96ms)
+[AUTH] /me error: Error [PrismaClientKnownRequestError]: 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findUnique()` invocation in
+/Users/nihaspl/Documents/SEO-writer/.next/dev/server/chunks/[root-of-the-server]__4d755471._.js:217:193
+
+  214         status: 401
+  215     });
+  216 }
+→ 217 const user = await __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findUnique(
+
+    at <unknown> (src/app/api/auth/me/route.ts:12:40)
+    at async GET (src/app/api/auth/me/route.ts:12:22)
+  10 |         }
+  11 |
+> 12 |         const user = await prisma.user.findUnique({
+     |                                        ^
+  13 |             where: { id: session.userId },
+  14 |             select: {
+  15 |                 id: true, {
+  code: 'ECONNREFUSED',
+  meta: [Object],
+  clientVersion: '7.4.1'
+}
+ GET /api/auth/me 500 in 310ms (compile: 7ms, render: 303ms)
+ GET /login 200 in 45ms (compile: 11ms, render: 34ms)
+ GET / 200 in 1141ms (compile: 825ms, render: 316ms)
+ GET /audit 200 in 1457ms (compile: 1369ms, render: 88ms)
+[AUTH] /me error: Error [PrismaClientKnownRequestError]: 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findUnique()` invocation in
+/Users/nihaspl/Documents/SEO-writer/.next/dev/server/chunks/[root-of-the-server]__4d755471._.js:217:193
+
+  214         status: 401
+  215     });
+  216 }
+→ 217 const user = await __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findUnique(
+
+    at <unknown> (src/app/api/auth/me/route.ts:12:40)
+    at async GET (src/app/api/auth/me/route.ts:12:22)
+  10 |         }
+  11 |
+> 12 |         const user = await prisma.user.findUnique({
+     |                                        ^
+  13 |             where: { id: session.userId },
+  14 |             select: {
+  15 |                 id: true, {
+  code: 'ECONNREFUSED',
+  meta: [Object],
+  clientVersion: '7.4.1'
+}
+ GET /api/auth/me 500 in 152ms (compile: 6ms, render: 146ms)
+ GET /login 200 in 15ms (compile: 4ms, render: 11ms)
+[AUTH] Login error: Error [PrismaClientKnownRequestError]: 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst()` invocation in
+/Users/nihaspl/Documents/SEO-writer/.next/dev/server/chunks/[root-of-the-server]__54f347d8._.js:227:193
+
+  224     });
+  225 }
+  226 // Find user by email or username
+→ 227 const user = await __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst(
+
+    at <unknown> (src/app/api/auth/login/route.ts:16:40)
+    at async POST (src/app/api/auth/login/route.ts:16:22)
+  14 |
+  15 |         // Find user by email or username
+> 16 |         const user = await prisma.user.findFirst({
+     |                                        ^
+  17 |             where: {
+  18 |                 OR: [
+  19 |                     { email: email.toLowerCase().trim() }, {
+  code: 'ECONNREFUSED',
+  meta: [Object],
+  clientVersion: '7.4.1'
+}
+ POST /api/auth/login 500 in 101ms (compile: 7ms, render: 94ms)
+ GET /register 200 in 25ms (compile: 8ms, render: 17ms)
+[AUTH] Register error: Error [PrismaClientKnownRequestError]: 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst()` invocation in
+/Users/nihaspl/Documents/SEO-writer/.next/dev/server/chunks/[root-of-the-server]__8a71d3c4._.js:326:201
+
+  323     });
+  324 }
+  325 // Check for existing user
+→ 326 const existingUser = await __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst(
+
+    at <unknown> (src/app/api/auth/register/route.ts:42:48)
+    at async POST (src/app/api/auth/register/route.ts:42:30)
+  40 |
+  41 |         // Check for existing user
+> 42 |         const existingUser = await prisma.user.findFirst({
+     |                                                ^
+  43 |             where: {
+  44 |                 OR: [
+  45 |                     { email: email.toLowerCase() }, {
+  code: 'ECONNREFUSED',
+  meta: [Object],
+  clientVersion: '7.4.1'
+}
+ POST /api/auth/register 500 in 139ms (compile: 35ms, render: 104ms)
+[AUTH] Register error: Error [PrismaClientKnownRequestError]: 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst()` invocation in
+/Users/nihaspl/Documents/SEO-writer/.next/dev/server/chunks/[root-of-the-server]__8a71d3c4._.js:326:201
+
+  323     });
+  324 }
+  325 // Check for existing user
+→ 326 const existingUser = await __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst(
+
+    at <unknown> (src/app/api/auth/register/route.ts:42:48)
+    at async POST (src/app/api/auth/register/route.ts:42:30)
+  40 |
+  41 |         // Check for existing user
+> 42 |         const existingUser = await prisma.user.findFirst({
+     |                                                ^
+  43 |             where: {
+  44 |                 OR: [
+  45 |                     { email: email.toLowerCase() }, {
+  code: 'ECONNREFUSED',
+  meta: [Object],
+  clientVersion: '7.4.1'
+}
+ POST /api/auth/register 500 in 125ms (compile: 27ms, render: 97ms)
+[AUTH] Register error: Error [PrismaClientKnownRequestError]: 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst()` invocation in
+/Users/nihaspl/Documents/SEO-writer/.next/dev/server/chunks/[root-of-the-server]__8a71d3c4._.js:326:201
+
+  323     });
+  324 }
+  325 // Check for existing user
+→ 326 const existingUser = await __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst(
+
+    at <unknown> (src/app/api/auth/register/route.ts:42:48)
+    at async POST (src/app/api/auth/register/route.ts:42:30)
+  40 |
+  41 |         // Check for existing user
+> 42 |         const existingUser = await prisma.user.findFirst({
+     |                                                ^
+  43 |             where: {
+  44 |                 OR: [
+  45 |                     { email: email.toLowerCase() }, {
+  code: 'ECONNREFUSED',
+  meta: [Object],
+  clientVersion: '7.4.1'
+}
+ POST /api/auth/register 500 in 89ms (compile: 6ms, render: 84ms)
+[AUTH] Register error: Error [PrismaClientKnownRequestError]: 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst()` invocation in
+/Users/nihaspl/Documents/SEO-writer/.next/dev/server/chunks/[root-of-the-server]__8a71d3c4._.js:326:201
+
+  323     });
+  324 }
+  325 // Check for existing user
+→ 326 const existingUser = await __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst(
+
+    at <unknown> (src/app/api/auth/register/route.ts:42:48)
+    at async POST (src/app/api/auth/register/route.ts:42:30)
+  40 |
+  41 |         // Check for existing user
+> 42 |         const existingUser = await prisma.user.findFirst({
+     |                                                ^
+  43 |             where: {
+  44 |                 OR: [
+  45 |                     { email: email.toLowerCase() }, {
+  code: 'ECONNREFUSED',
+  meta: [Object],
+  clientVersion: '7.4.1'
+}
+ POST /api/auth/register 500 in 93ms (compile: 6ms, render: 86ms)
+[AUTH] Register error: Error [PrismaClientKnownRequestError]: 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst()` invocation in
+/Users/nihaspl/Documents/SEO-writer/.next/dev/server/chunks/[root-of-the-server]__8a71d3c4._.js:326:201
+
+  323     });
+  324 }
+  325 // Check for existing user
+→ 326 const existingUser = await __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst(
+
+    at <unknown> (src/app/api/auth/register/route.ts:42:48)
+    at async POST (src/app/api/auth/register/route.ts:42:30)
+  40 |
+  41 |         // Check for existing user
+> 42 |         const existingUser = await prisma.user.findFirst({
+     |                                                ^
+  43 |             where: {
+  44 |                 OR: [
+  45 |                     { email: email.toLowerCase() }, {
+  code: 'ECONNREFUSED',
+  meta: [Object],
+  clientVersion: '7.4.1'
+}
+ POST /api/auth/register 500 in 118ms (compile: 5ms, render: 113ms)
+[AUTH] Register error: Error [PrismaClientKnownRequestError]: 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst()` invocation in
+/Users/nihaspl/Documents/SEO-writer/.next/dev/server/chunks/[root-of-the-server]__8a71d3c4._.js:326:201
+
+  323     });
+  324 }
+  325 // Check for existing user
+→ 326 const existingUser = await __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst(
+
+    at <unknown> (src/app/api/auth/register/route.ts:42:48)
+    at async POST (src/app/api/auth/register/route.ts:42:30)
+  40 |
+  41 |         // Check for existing user
+> 42 |         const existingUser = await prisma.user.findFirst({
+     |                                                ^
+  43 |             where: {
+  44 |                 OR: [
+  45 |                     { email: email.toLowerCase() }, {
+  code: 'ECONNREFUSED',
+  meta: [Object],
+  clientVersion: '7.4.1'
+}
+ POST /api/auth/register 500 in 90ms (compile: 6ms, render: 84ms)
+[AUTH] Register error: Error [PrismaClientKnownRequestError]: 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst()` invocation in
+/Users/nihaspl/Documents/SEO-writer/.next/dev/server/chunks/[root-of-the-server]__8a71d3c4._.js:326:201
+
+  323     });
+  324 }
+  325 // Check for existing user
+→ 326 const existingUser = await __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst(
+
+    at <unknown> (src/app/api/auth/register/route.ts:42:48)
+    at async POST (src/app/api/auth/register/route.ts:42:30)
+  40 |
+  41 |         // Check for existing user
+> 42 |         const existingUser = await prisma.user.findFirst({
+     |                                                ^
+  43 |             where: {
+  44 |                 OR: [
+  45 |                     { email: email.toLowerCase() }, {
+  code: 'ECONNREFUSED',
+  meta: [Object],
+  clientVersion: '7.4.1'
+}
+ POST /api/auth/register 500 in 92ms (compile: 9ms, render: 83ms)
+[AUTH] Register error: Error [PrismaClientKnownRequestError]: 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst()` invocation in
+/Users/nihaspl/Documents/SEO-writer/.next/dev/server/chunks/[root-of-the-server]__8a71d3c4._.js:326:201
+
+  323     });
+  324 }
+  325 // Check for existing user
+→ 326 const existingUser = await __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst(
+
+    at <unknown> (src/app/api/auth/register/route.ts:42:48)
+    at async POST (src/app/api/auth/register/route.ts:42:30)
+  40 |
+  41 |         // Check for existing user
+> 42 |         const existingUser = await prisma.user.findFirst({
+     |                                                ^
+  43 |             where: {
+  44 |                 OR: [
+  45 |                     { email: email.toLowerCase() }, {
+  code: 'ECONNREFUSED',
+  meta: [Object],
+  clientVersion: '7.4.1'
+}
+ POST /api/auth/register 500 in 81ms (compile: 4ms, render: 77ms)
+[AUTH] Register error: Error [PrismaClientKnownRequestError]: 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst()` invocation in
+/Users/nihaspl/Documents/SEO-writer/.next/dev/server/chunks/[root-of-the-server]__8a71d3c4._.js:326:201
+
+  323     });
+  324 }
+  325 // Check for existing user
+→ 326 const existingUser = await __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst(
+
+    at <unknown> (src/app/api/auth/register/route.ts:42:48)
+    at async POST (src/app/api/auth/register/route.ts:42:30)
+  40 |
+  41 |         // Check for existing user
+> 42 |         const existingUser = await prisma.user.findFirst({
+     |                                                ^
+  43 |             where: {
+  44 |                 OR: [
+  45 |                     { email: email.toLowerCase() }, {
+  code: 'ECONNREFUSED',
+  meta: [Object],
+  clientVersion: '7.4.1'
+}
+ POST /api/auth/register 500 in 95ms (compile: 7ms, render: 88ms)
+[AUTH] Register error: Error [PrismaClientKnownRequestError]: 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst()` invocation in
+/Users/nihaspl/Documents/SEO-writer/.next/dev/server/chunks/[root-of-the-server]__8a71d3c4._.js:326:201
+
+  323     });
+  324 }
+  325 // Check for existing user
+→ 326 const existingUser = await __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst(
+
+    at <unknown> (src/app/api/auth/register/route.ts:42:48)
+    at async POST (src/app/api/auth/register/route.ts:42:30)
+  40 |
+  41 |         // Check for existing user
+> 42 |         const existingUser = await prisma.user.findFirst({
+     |                                                ^
+  43 |             where: {
+  44 |                 OR: [
+  45 |                     { email: email.toLowerCase() }, {
+  code: 'ECONNREFUSED',
+  meta: [Object],
+  clientVersion: '7.4.1'
+}
+ POST /api/auth/register 500 in 82ms (compile: 4ms, render: 78ms)
+ GET /login 200 in 18ms (compile: 5ms, render: 12ms)
+[AUTH] Login error: Error [PrismaClientKnownRequestError]: 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst()` invocation in
+/Users/nihaspl/Documents/SEO-writer/.next/dev/server/chunks/[root-of-the-server]__54f347d8._.js:227:193
+
+  224     });
+  225 }
+  226 // Find user by email or username
+→ 227 const user = await __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst(
+
+    at <unknown> (src/app/api/auth/login/route.ts:16:40)
+    at async POST (src/app/api/auth/login/route.ts:16:22)
+  14 |
+  15 |         // Find user by email or username
+> 16 |         const user = await prisma.user.findFirst({
+     |                                        ^
+  17 |             where: {
+  18 |                 OR: [
+  19 |                     { email: email.toLowerCase().trim() }, {
+  code: 'ECONNREFUSED',
+  meta: [Object],
+  clientVersion: '7.4.1'
+}
+ POST /api/auth/login 500 in 115ms (compile: 10ms, render: 106ms)
+[AUTH] Login error: Error [PrismaClientKnownRequestError]: 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst()` invocation in
+/Users/nihaspl/Documents/SEO-writer/.next/dev/server/chunks/[root-of-the-server]__54f347d8._.js:227:193
+
+  224     });
+  225 }
+  226 // Find user by email or username
+→ 227 const user = await __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst(
+
+    at <unknown> (src/app/api/auth/login/route.ts:16:40)
+    at async POST (src/app/api/auth/login/route.ts:16:22)
+  14 |
+  15 |         // Find user by email or username
+> 16 |         const user = await prisma.user.findFirst({
+     |                                        ^
+  17 |             where: {
+  18 |                 OR: [
+  19 |                     { email: email.toLowerCase().trim() }, {
+  code: 'ECONNREFUSED',
+  meta: [Object],
+  clientVersion: '7.4.1'
+}
+ POST /api/auth/login 500 in 90ms (compile: 2ms, render: 87ms)
+[AUTH] Login error: Error [PrismaClientKnownRequestError]: 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst()` invocation in
+/Users/nihaspl/Documents/SEO-writer/.next/dev/server/chunks/[root-of-the-server]__54f347d8._.js:227:193
+
+  224     });
+  225 }
+  226 // Find user by email or username
+→ 227 const user = await __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst(
+
+    at <unknown> (src/app/api/auth/login/route.ts:16:40)
+    at async POST (src/app/api/auth/login/route.ts:16:22)
+  14 |
+  15 |         // Find user by email or username
+> 16 |         const user = await prisma.user.findFirst({
+     |                                        ^
+  17 |             where: {
+  18 |                 OR: [
+  19 |                     { email: email.toLowerCase().trim() }, {
+  code: 'ECONNREFUSED',
+  meta: [Object],
+  clientVersion: '7.4.1'
+}
+ POST /api/auth/login 500 in 120ms (compile: 14ms, render: 107ms)
+[AUTH] Login error: Error [PrismaClientKnownRequestError]: 
+Invalid `__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst()` invocation in
+/Users/nihaspl/Documents/SEO-writer/.next/dev/server/chunks/[root-of-the-server]__54f347d8._.js:227:193
+
+  224     });
+  225 }
+  226 // Find user by email or username
+→ 227 const user = await __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$SEO$2d$writer$2f$src$2f$lib$2f$prisma$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["default"].user.findFirst(
+
+    at <unknown> (src/app/api/auth/login/route.ts:16:40)
+    at async POST (src/app/api/auth/login/route.ts:16:22)
+  14 |
+  15 |         // Find user by email or username
+> 16 |         const user = await prisma.user.findFirst({
+     |                                        ^
+  17 |             where: {
+  18 |                 OR: [
+  19 |                     { email: email.toLowerCase().trim() }, {
+  code: 'ECONNREFUSED',
+  meta: [Object],
+  clientVersion: '7.4.1'
+}
+ POST /api/auth/login 500 in 177ms (compile: 42ms, render: 134ms)
