@@ -10,7 +10,7 @@ export async function POST(request: Request) {
         const { workspace } = await getAuthenticatedUser(request);
 
         // Fetch all prompts for this workspace
-        const prompts = await prisma.aiPrompt.findMany({
+        const prompts = await prisma.aIPrompt.findMany({
             where: {
                 workspaceId: workspace.id,
             }

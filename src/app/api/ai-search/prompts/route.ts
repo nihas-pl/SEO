@@ -9,7 +9,7 @@ export async function GET(request: Request) {
         const { workspace } = await getAuthenticatedUser(request);
 
         // Fetch all prompts for this workspace along with their newest evaluation
-        const prompts = await prisma.aiPrompt.findMany({
+        const prompts = await prisma.aIPrompt.findMany({
             where: {
                 workspaceId: workspace.id,
             },
@@ -41,7 +41,7 @@ export async function POST(request: Request) {
             return NextResponse.json({ error: 'Prompt is required' }, { status: 400 });
         }
 
-        const newPrompt = await prisma.aiPrompt.create({
+        const newPrompt = await prisma.aIPrompt.create({
             data: {
                 workspaceId: workspace.id,
                 prompt: prompt,
