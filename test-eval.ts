@@ -2,7 +2,7 @@ import { evaluateAIPrompt } from './src/server/services/ai-evaluator';
 import prisma from './src/lib/prisma';
 
 async function main() {
-  const prompt = await prisma.aiPrompt.findFirst();
+  const prompt = await prisma.aIPrompt.findFirst();
   if (!prompt) {
     console.log("No prompt to evaluate");
     return;
