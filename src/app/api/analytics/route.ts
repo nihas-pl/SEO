@@ -57,7 +57,8 @@ export async function GET(request: Request) {
         });
 
         // Ensure we fetch a fresh token if it will expire soon
-        const { credentials } = await oauth2Client.getAccessToken();
+        const tokenResponse = await oauth2Client.getAccessToken();
+        const token = tokenResponse.token;
 
         // If no GA Property ID is set in the DB, we have a connected account but no selected property.
         // For simplicity now, we assume the user provides it, or we rely on a global one if testing.
